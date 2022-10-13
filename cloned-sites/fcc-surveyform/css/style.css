@@ -1,0 +1,88 @@
+body{
+    position: relative;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: 'Poppins', sans-serif !important;
+    background-color: rgba(0,0,255,0.6);
+}
+/* body::before{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+h1 {
+	font-weight: 100;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#main-container {
+    box-sizing: border-box;
+	margin: 0 auto 50px;
+	width: 720px;
+    background-color: #252545b0;
+    border-radius: 5px;
+}
+header{
+    margin: 50px;
+    text-align: center;
+    line-height: 18px;
+}
+header p{
+    font-size: 20px;
+    font-style: italic;
+}
+#survey-form{
+    padding: 40px;
+    font-size: 20px;
+}
+.form-group{
+    margin: 25px 15px;
+}
+label{
+    cursor: pointer;
+}
+input, select, textarea, button{
+    box-sizing: border-box;
+    margin: 15px auto;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+}
+input:focus, select:focus{
+    border: 3px solid #ced4da;
+    /* border-color: red; */
+}
+p{
+    margin: 0 0 10px 0;
+}
+input[type='radio'], input[type='checkbox']{
+    accent-color: #3A3A7F;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+    display: inline-block;
+    width: auto;
+    margin: 5px auto;
+}
+.block-label{
+    display: block;
+}
+textarea{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+button{
+    background-color: #37af65;
+}

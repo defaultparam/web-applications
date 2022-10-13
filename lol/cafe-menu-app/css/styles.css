@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.container{
+    background-color: rgb(247, 191, 145);
+    width: 550px;
+    height: 600px;
+}
+.main-container{
+    padding: 20px;
+}
+.header{
+    font-family: Impact, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-title{
+    font-size: 36px;
+    font-weight: bold;
+}
+.menu{
+    border-top: 3px solid brown;
+    border-bottom: 3px solid brown;
+}
+.menu-section-1, .menu-section-2{
+    padding-bottom: 8px;
+}
+.menu img{
+    display: block;
+    margin: auto;
+}
+.section-header{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Impact, sans-serif;
+}
+.main-menu{
+    margin-top: 10px;
+    font-weight: lighter;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.main-menu *{
+    margin-bottom: 2px;
+}
+.item-price{
+    text-align: right;
+}
+.footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.site-link-footer{
+    margin: auto;
+}
+.footer-address{
+    margin-top: 13px;
+}

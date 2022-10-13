@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Some random site</title>
+    <!-- <script src="script.js"></script> -->
+
+</head>
+
+<body>
+    <input type="submit" onclick="turnon()" value="Turn on the Light Bulb">
+    <img id='image' src="./pic_bulbon.gif" alt="">
+    <input type="submit" onclick="turnoff()" value="Turn off the Light Bulb">
+    
+    <script>
+
+        function turnon(){
+            document.getElementById('image').src = './pic_bulbon.gif'
+        }
+        function turnoff(){
+            document.getElementById('image').src= './pic_bulboff.gif'
+        }
+
+    </script>
+</body>
+
+</html>

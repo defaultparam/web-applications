@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="title">Employee Survey Form</h1>
+        <p id="description">Welcome to the new employees of the Avengers Initiative. I, Director Fury of this ship
+            welcome
+            you all to my paradise. Please fill the below form so that we can host a party on the victory against the
+            <em>Chitauri Army</em>.
+        </p>
+        <form action="/" method="post" id="survey-form">
+
+            <div class="form-section">
+
+                <div class="form-group">
+                    <label for="name" id="name-label">Enter your Name
+                        <input type="text" id="name" name="name" placeholder="Joe Mama" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Enter your Email
+                        <input type="email" id="email" placeholder="mama.joe@website.ext" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Enter a number between 0 - 10
+                        <input type="number" id="number" min="0" max="10" placeholder="9">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Select tag -->
+            <div class="form-section">
+
+                <label for="gender">What is your gender?
+
+                    <select name="gender" id="dropdown">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </label>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-section">
+
+                <p id="fav-phase">
+                    Pick which of the marvel phases you liked the most?
+                </p>
+
+
+                <div class="form-group">
+                    <input type="checkbox" id="phase1" name="industry" value="phase1">
+                    <label for="phase1">Phase 1</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="phase2" name="industry" value="phase2">
+                    <label for="phase2">Phase 2</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="phase3" name="industry" value="phase3">
+                    <label for="phase3">Phase 3</label>
+                </div>
+                </label>
+            </div>
+
+            <!-- Radio buttons -->
+            <div class="form-section">
+
+                <p id="fav-avenger">Who is your favourite Avenger?</p>
+
+                <div class="form-group">
+                    <input type="radio" value="ironman" id="ironman" name="fav-avenger" checked>
+                    <label for="ironman">Iron Man</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="radio" value="captainamerica" id="captainamerica" name="fav-avenger">
+                    <label for="captainamerica">Captain America</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" value="thor" id="thor" name="fav-avenger">
+                    <label for="thor">Thor - The Odinson</label>
+                </div>
+            </div>
+            <div class="form-section">
+
+                <label for="review" id="textarea-label">Got any other suggestions / recommendations / reviews? Drop them
+                    down below</label>
+                <textarea name="review" id="review" placeholder="Comments"></textarea>
+            </div>
+
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

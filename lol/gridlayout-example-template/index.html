@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link id='xyz' rel="stylesheet" href="style.css">
+    <script>
+        function changeCSS(cssFile) {
+            let oldlink = document.getElementById('xyz');
+            oldlink.href = cssFile
+        }
+    </script>
+
+    <style>
+        button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            background-color: grey;
+            margin: auto;
+        }
+    </style>
+
+    <title>Grid Layout</title>
+</head>
+
+<body>
+    <button onclick="changeCSS('style.css')">
+        Use the grid-column layout (Standardized)
+    </button>
+    <button onclick="changeCSS('style2.css')">
+        Use the grid-area layout (Advanced)
+    </button>
+    <div class="container">
+        <div class="section" id="section-1">
+            <div class="items" id="h1"></div>
+            <div class="items" id="h2">
+                <div class="subitem-1" id="h21"></div>
+                <div class="subitem-1" id="h22"></div>
+            </div>
+            <div class="items" id="h3"></div>
+        </div>
+        <div class="section" id="section-2"></div>
+        <div class="section" id="section-3"></div>
+        <div class="section" id="section-4"></div>
+        <div class="section" id="section-5">
+            <div class="big-items" id="s51"></div>
+            <div class="small-items" id="s52"></div>
+            <div class="small-items" id="s53"></div>
+            <div class="big-items" id="s54"></div>
+        </div>
+    </div>
+</body>
+
+</html>

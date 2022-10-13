@@ -1,0 +1,133 @@
+/* Following is a css file used for making the same layout using grid-area property */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+
+	width: 100vw;
+	height: 100vh;
+
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+/* CONTAINER CLASS */
+
+.container {
+	width: 50vw;
+	height: 70vh;
+	background-color: lightgreen;
+	border: 5px solid green;
+
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"content aside1"
+		"content aside2"
+		"footer footer";
+	grid-gap: 5px;
+	padding: 10px;
+}
+.section {
+	background-color: lightblue;
+	border: 5px solid blue;
+}
+
+/* SECTION 1 */
+
+#section-1 {
+	grid-area: header;
+
+	display: grid;
+	grid-template-areas: "h1 h2 h3";
+	grid-gap: 5px;
+	padding: 10px;
+}
+.items {
+	background-color: rgb(255, 219, 128);
+	border: 5px solid coral;
+}
+
+/* Inner header grid areas */
+
+#h1 {
+	grid-area: h1;
+}
+#h2 {
+	grid-area: h2;
+
+	display: grid;
+	grid-template-areas: "h21 h22";
+	padding: 3px;
+}
+#h3 {
+	grid-area: h3;
+}
+.subitem-1 {
+	background-color: pink;
+	border: 5px solid red;
+}
+#h21 {
+	grid-area: h21;
+}
+#h22 {
+	grid-area: h22;
+}
+
+/* SECTION 2 */
+
+#section-2 {
+	grid-area: content;
+	background-color: lightcoral;
+	border: 5px solid brown;
+}
+
+/* SECTION 3 & 4 */
+
+#section-3 {
+	grid-area: aside1;
+	background-color: lightcoral;
+	border: 5px solid brown;
+}
+#section-4 {
+	grid-area: aside2;
+	background-color: lightcoral;
+	border: 5px solid brown;
+}
+
+/* SECTION 5 */
+
+#section-5 {
+	grid-area: footer;
+
+	display: grid;
+	grid-template-areas: "s51 s51 s52 s53 s54 s54";
+
+	padding: 5px;
+	grid-gap: 5px;
+}
+.big-items {
+	background-color: rgb(144, 144, 255);
+	border: 5px solid rgb(50, 50, 236);
+}
+.small-items {
+	background-color: rgb(255, 219, 128);
+	border: 5px solid coral;
+}
+
+/* Section 5 grid area */
+
+#s51 {
+	grid-area: s51;
+}
+#s52 {
+	grid-area: s52;
+}
+#s53 {
+	grid-area: s53;
+}
+#s54 {
+	grid-area: s54;
+}
